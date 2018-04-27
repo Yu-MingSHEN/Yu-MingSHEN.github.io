@@ -8,8 +8,6 @@ Fonts :
 
 - Font Awesome Icons - http://fontawesome.io/icons/
 
-- Simple Line Icons - http://simplelineicons.com/
-
 
 
 Images :
@@ -20,10 +18,8 @@ Images :
 
 - Freepik - http://www.freepik.com/
 
-- Subtle Patterns - https://subtlepatterns.com/
-
 Please Note : We used images in our templates demo just for demonstration purpose only and 
-Images not included (except pattern images) in the download file due to license right.
+Images not included in the download file due to license right.
 
 
 
@@ -37,12 +33,16 @@ Plugin Resources :
 
 - countTo.js - https://github.com/mhuggins/jquery-countTo  (Used for number counter)
 
+- gmap.js - https://github.com/marioestrada/jQuery-gMap  (Used for google map)
+
+- stellar.js - https://github.com/markdalgleish/stellar.js  (Used for parallax background)
+
 - magnigic-popup.js - https://github.com/dimsemenov/Magnific-Popup  (Used for Image Popup)
 
 - mixitup.js - https://github.com/patrickkunka/mixitup  (Used for portfolio filtering)
 
 - owlcarousel.js - https://github.com/OwlFonk/OwlCarousel  (Used for Carousel/Slider)
 
-- ajaxchimp.js - https://github.com/scdoshi/jquery-ajaxchimp  (Used for mailchimp form working with AJAX)
+- typed.js - https://github.com/mattboldt/typed.js/  (Used for typing text)
 
 

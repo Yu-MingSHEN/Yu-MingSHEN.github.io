@@ -1,6 +1,6 @@
 /*
    
-    Template Name : WebRes - Personal Resume Template
+    Template Name : Rolling - Freelancer Portfolio Template
     Author : UiPasta Team
     Website : http://www.uipasta.com/
     Support : http://www.uipasta.com/support/
@@ -19,12 +19,13 @@
    3. Scroll Naviagation Background Change with Sticky Navigation
    4. Mobile Navigation Hide or Collapse on Click
    5. Scroll To Top
-   6. Tooltip
-   7. Ajaxchimp for Subscribe Form
+   6. Typed.js
+   7. Parallax Background
    8. Portfolio Filtering
    9. Magnific Popup
   10. Testimonial Carousel/Slider
   11. Statistics Counter
+  12. Google Map
  
 
 */
@@ -38,8 +39,8 @@
         
        /* Preloader */
 		
-        $(window).load(function () {
-            $('.preloader').delay(800).fadeOut('slow');
+        $(window).on('load', function() {
+          $('body').addClass('loaded');
         });
 		
 		
@@ -102,22 +103,32 @@
 		  return false;
 	    });
 		
+		
+		
+		
+        /* Typed.js */
+		
+        $(window).load(function(){
+        $(".typing").typed({
+            strings: ["I am A Freelancer.", "I Design Websites.", "I Live in New York."],    /* You can change the home section typing text from
+	                                                                                            here and do not use "&" use "and" */
+            typeSpeed: 50
+          });
+         });
+        
+		 
+        /* Parallax Background */
+
+        $(window).stellar({
+            responsive: true,
+            horizontalScrolling: false,
+            hideDistantElements: false,
+            horizontalOffset: 0,
+            verticalOffset: 0,
+        });
 
         
-        /* Tooltip */
-         
-         $(function () {
-           $('[data-toggle="tooltip"]').tooltip()
-           })
-		   
-		 
-        
-        /* Ajaxchimp for Subscribe Form */
 		
-         $('#mc-form').ajaxChimp();
-		   
-		   
-  
 		
         /* Portfolio Filtering */
 
@@ -136,7 +147,6 @@
 					
           },
 		  
-		  
          image:{
                markup: '<div class="mfp-figure portfolio-pop-up">'+
                '<div class="mfp-close"></div>'+
@@ -154,6 +164,8 @@
 		  
 		  
           });
+
+       
 	   
 		 
         /* Testimonial Carousel/Slider */
@@ -171,7 +183,7 @@
             itemsMobile: [479, 1],
             autoHeight: true,
             pagination: false,
-            transitionStyle : "fadeUp"
+            transitionStyle : "backSlide"
         });
 		
 		
@@ -190,6 +202,23 @@
            refreshInterval: 50
            })
            });
+		   
+		  
+         
+         /* Google Map */
+		 
+         $('#my-address').gMap({
+            zoom: 5,
+            scrollwheel: true,
+            maptype: 'ROADMAP',
+            markers:[
+            {
+            address: "New York",  /* You can change your address from here */
+            html: "<b>Address</b>: <br> Area-2, Rose Area, New York, U.S.A.",   /* You can change display address text from here */
+            popup: true
+            }
+            ]
+            });
               
 		   
             });
