@@ -678,7 +678,11 @@ ul.portfolio li.active {
     z-index: 1;
 }
 
-
+.statistics {
+  margin: 25px 0;
+  overflow: hidden;
+  color: #ffffff;
+}
 
 .statistics.block .statistics-icon,
 .statistics.block .statistics-content {
